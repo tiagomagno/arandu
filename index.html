@@ -7,18 +7,14 @@
   <title>Arandu Clínica de Psicologia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio">
-        <span class="brand-mark">A</span>
-        <span>
-          <strong>ARANDU</strong>
-          <small>Clínica de Psicologia</small>
-        </span>
+        <img class="brand-logo" src="assets/logo.svg" alt="Arandu Clínica de Psicologia" />
       </a>
 
       <button class="menu-toggle" aria-label="Abrir menu">☰</button>
@@ -27,7 +23,7 @@
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Atendimentos</a>
-        <a href="#profissional">Responsável técnico</a>
+        <a href="#equipe">Responsável</a>
         <a href="#contato">Contato</a>
       </nav>
 
@@ -37,66 +33,85 @@
 
   <main>
     <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Psicologia com acolhimento e propósito</span>
-          <h1>Cuidar da mente também é uma forma de florescer.</h1>
-          <p>
-            Um espaço de escuta, acolhimento e desenvolvimento para crianças,
-            adolescentes e adultos, com atendimento psicológico ético e individualizado.
+      <div class="container">
+        <span class="eyebrow">CRP 20/10762 — David Azulay de Azevedo</span>
+        <h1 class="hero-title">
+          Psicologia
+          <span class="accent">com acolhimento</span>
+          e propósito.
+        </h1>
+        <p class="hero-lead">
+          Cuidar da mente também é uma forma de florescer. Um espaço de escuta ética,
+          cuidado individualizado e transformação genuína.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#contato">Agendar atendimento</a>
+          <a class="btn btn-ghost" href="#servicos">Conhecer atendimentos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="name-band">
+      <div class="container name-band-grid">
+        <div>
+          <span class="eyebrow on-dark">O nome Arandu</span>
+          <h2 class="name-band-title">Sabedoria, cuidado e transformação.</h2>
+        </div>
+        <p class="name-band-text">
+          Na língua Guarani, Arandu significa sabedoria — um nome escolhido para
+          refletir a essência do trabalho: presença, escuta e crescimento genuíno.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container split about-grid">
+        <div class="about-visual" aria-hidden="true">
+          <span class="leaf leaf-1"></span>
+          <span class="leaf leaf-2"></span>
+        </div>
+        <div>
+          <span class="eyebrow">Sobre a clínica</span>
+          <h2 class="about-title">Um espaço de escuta genuína.</h2>
+          <span class="divider"></span>
+          <p class="about-lead">
+            A Arandu nasceu com o propósito de oferecer cuidado psicológico acessível,
+            humanizado e baseado em evidências. Aqui, cada atendimento é construído com
+            base na história única de quem chega — sem atalhos, sem protocolos genéricos.
+          </p>
+          <p class="about-text">
+            Integramos escuta clínica, ciência psicológica e estratégias individualizadas
+            para crianças, adolescentes e adultos. O compromisso é com o desenvolvimento
+            real e duradouro de cada pessoa que confia a nós o seu processo.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn" href="#contato">Agendar atendimento</a>
-            <a class="btn btn-ghost" href="#servicos">Conhecer atendimentos</a>
-          </div>
-
-          <div class="hero-highlights">
-            <div><strong>Infantil</strong><span>Acolhimento e desenvolvimento</span></div>
-            <div><strong>Adulto</strong><span>Psicoterapia individual</span></div>
-            <div><strong>Avaliação</strong><span>Investigação psicológica</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="leaf-card">
-            <span class="leaf leaf-1"></span>
-            <span class="leaf leaf-2"></span>
-            <span class="leaf leaf-3"></span>
-            <div class="visual-center">
-              <span class="mini">ARANDU</span>
-              <h2>Sabedoria, cuidado e transformação.</h2>
+          <div class="about-stats">
+            <div>
+              <h3>Crianças</h3>
+              <span>Psicoterapia infantil</span>
+            </div>
+            <div>
+              <h3>Adultos</h3>
+              <span>Terapia individual</span>
+            </div>
+            <div>
+              <h3>Famílias</h3>
+              <span>Orientação parental</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section soft" id="sobre">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">Sobre a Arandu</span>
-          <h2>Um espaço construído para acolher histórias com respeito e sensibilidade.</h2>
-        </div>
-        <div class="text-block">
-          <p>
-            A Arandu Clínica de Psicologia nasce com a proposta de oferecer um cuidado
-            psicológico acessível, ético e humanizado, valorizando a singularidade de cada pessoa.
-          </p>
-          <p>
-            Nosso trabalho integra escuta clínica, ciência psicológica e estratégias
-            individualizadas para favorecer saúde mental, autonomia e qualidade de vida.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="servicos">
+    <section class="section soft" id="servicos">
       <div class="container">
         <div class="section-heading">
           <span class="eyebrow">Atendimentos</span>
-          <h2>Cuidado psicológico em diferentes fases da vida.</h2>
-          <p>Conheça algumas das possibilidades de acompanhamento disponíveis na clínica.</p>
+          <h2>Modalidades de cuidado</h2>
+          <p>
+            Cada modalidade é conduzida com rigor técnico e sensibilidade clínica,
+            respeitando o tempo e as necessidades de cada pessoa.
+          </p>
         </div>
 
         <div class="cards">
@@ -104,125 +119,176 @@
             <span class="card-num">01</span>
             <h3>Psicoterapia Infantil</h3>
             <p>
-              Atendimento voltado às necessidades emocionais, comportamentais e do desenvolvimento,
-              com recursos lúdicos e orientação à família quando necessário.
+              Suporte emocional e comportamental para crianças, com orientação
+              integrada à família em todas as etapas do processo.
             </p>
+            <span class="divider small"></span>
           </article>
 
           <article class="card">
             <span class="card-num">02</span>
             <h3>Psicoterapia para Adultos</h3>
             <p>
-              Espaço de escuta e acompanhamento para questões emocionais, relacionais,
-              comportamentais e processos de mudança.
+              Terapia individual voltada para questões emocionais, relacionais e
+              existenciais — com escuta atenta e sem julgamentos.
             </p>
+            <span class="divider small"></span>
           </article>
 
           <article class="card">
             <span class="card-num">03</span>
             <h3>Neurodesenvolvimento</h3>
             <p>
-              Acompanhamento de demandas relacionadas ao desenvolvimento infantil,
-              incluindo autismo e outras condições do neurodesenvolvimento.
+              Atendimento especializado em autismo e condições do neurodesenvolvimento,
+              com abordagem baseada em evidências.
             </p>
+            <span class="divider small"></span>
           </article>
 
           <article class="card">
             <span class="card-num">04</span>
             <h3>Avaliação Psicológica</h3>
             <p>
-              Processo estruturado de investigação psicológica, realizado conforme
-              indicação clínica e com instrumentos reconhecidos para uso profissional.
+              Processo estruturado de avaliação com uso de instrumentos validados,
+              gerando relatório técnico fundamentado.
             </p>
+            <span class="divider small"></span>
           </article>
 
           <article class="card">
             <span class="card-num">05</span>
             <h3>Orientação Parental</h3>
             <p>
-              Acompanhamento de pais e responsáveis para compreensão de comportamentos,
-              fortalecimento de vínculos e construção de estratégias familiares.
+              Suporte às famílias no desenvolvimento de estratégias saudáveis para a
+              criação e o relacionamento com os filhos.
             </p>
+            <span class="divider small"></span>
           </article>
 
           <article class="card accent-card">
             <span class="card-num">06</span>
-            <h3>Atendimento com valor social</h3>
+            <h3>Atendimento com Valor Social</h3>
             <p>
-              A clínica mantém modalidades de atendimento com valor social, conforme
-              disponibilidade de agenda e critérios do serviço.
+              Sessões com taxa acessível para garantir que o cuidado psicológico
+              chegue a quem mais precisa.
             </p>
+            <span class="divider small on-dark"></span>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section profile" id="profissional">
-      <div class="container profile-grid">
-        <div class="profile-photo">
-          <div class="photo-placeholder">DA</div>
-        </div>
-
-        <div>
-          <span class="eyebrow">Responsável técnico</span>
-          <h2>David Azulay de Azevedo</h2>
-          <p class="lead">Psicólogo Clínico e Comportamental — CRP 20/10762</p>
-          <p>
-            Atuação clínica com público infantil e adulto, com ênfase em transtornos
-            do neurodesenvolvimento, psicoterapia e orientação a famílias.
-          </p>
-          <p>
-            Especialista em Psicopedagogia Clínica e Institucional e com formação
-            continuada em intervenções comportamentais aplicadas ao autismo e à deficiência intelectual.
-          </p>
         </div>
       </div>
     </section>
 
     <section class="section quote-section">
       <div class="container quote-box">
-        <span class="eyebrow light">Nosso propósito</span>
+        <span class="divider center"></span>
         <blockquote>
-          “Cada pessoa possui sua própria história. O cuidado começa quando ela encontra
-          um espaço seguro para ser escutada.”
+          “Cada pessoa possui sua própria história. O cuidado começa quando ela
+          encontra um espaço seguro para ser escutada.”
         </blockquote>
+        <span class="quote-attribution">David Azulay de Azevedo — Psicólogo</span>
+      </div>
+    </section>
+
+    <section class="section soft" id="equipe">
+      <div class="container">
+        <span class="eyebrow">Equipe técnica</span>
+        <h2 class="team-title">Quem cuida <span class="sans">de você</span></h2>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="assets/team-david.png" alt="David Azulay de Azevedo" />
+              <span class="team-badge">CRP 20/10762</span>
+            </div>
+            <div class="team-body">
+              <span class="team-role">Psicólogo · Responsável Técnico</span>
+              <h3>David Azulay de Azevedo</h3>
+              <p>
+                Especialista em Psicopedagogia Clínica, com atuação focada em
+                neurodesenvolvimento, intervenções comportamentais, autismo e
+                deficiência intelectual.
+              </p>
+              <div class="team-tags">
+                <span>Psicopedagogia Clínica</span>
+                <span>Neurodesenvolvimento</span>
+                <span>ABA / TEA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="assets/team-2.png" alt="Psicóloga clínica da equipe Arandu" />
+              <span class="team-badge">CRP 20/00000</span>
+            </div>
+            <div class="team-body">
+              <span class="team-role">Psicóloga Clínica</span>
+              <h3>Nome do Profissional</h3>
+              <p>
+                Especialista em psicoterapia para adultos e adolescentes, com
+                abordagem baseada na terapia cognitivo-comportamental e atenção
+                plena.
+              </p>
+              <div class="team-tags">
+                <span>Psicoterapia Adultos</span>
+                <span>TCC</span>
+                <span>Ansiedade</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="assets/team-3.png" alt="Psicóloga infantil da equipe Arandu" />
+              <span class="team-badge">CRP 20/00000</span>
+            </div>
+            <div class="team-body">
+              <span class="team-role">Psicóloga Infantil</span>
+              <h3>Nome do Profissional</h3>
+              <p>
+                Atuação voltada à psicoterapia infantil e orientação parental, com
+                foco no desenvolvimento emocional e comportamental na primeira
+                infância.
+              </p>
+              <div class="team-tags">
+                <span>Psicoterapia Infantil</span>
+                <span>Orientação Parental</span>
+                <span>Primeira Infância</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="team-note">
+          Substitua as fotos e dados de “Nome do Profissional” pela equipe real antes de publicar.
+        </p>
       </div>
     </section>
 
     <section class="section" id="contato">
       <div class="container contact-grid">
         <div>
-          <span class="eyebrow">Agendamento</span>
-          <h2>Entre em contato com a Arandu.</h2>
-          <p>
-            Para informações sobre horários, valores e disponibilidade, fale com nossa equipe.
-          </p>
-
-          <div class="contact-list">
-            <div>
-              <small>Endereço</small>
-              <strong>Av. Japurá, 1414 — Praça 14 de Janeiro, Manaus/AM</strong>
-            </div>
-            <div>
-              <small>Instagram</small>
-              <strong>@arandupsi</strong>
-            </div>
-            <div>
-              <small>Funcionamento</small>
-              <strong>Terça a sábado — manhã, tarde e noite</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <h3>Agende seu atendimento</h3>
-          <p>
-            Clique no botão abaixo para iniciar uma conversa pelo WhatsApp.
-          </p>
-          <a class="btn full" href="https://wa.me/5592999999999" target="_blank" rel="noopener">
+          <span class="eyebrow">Contato</span>
+          <h2>Vamos começar<br />essa conversa?</h2>
+          <a class="btn btn-icon" href="https://wa.me/5592999999999" target="_blank" rel="noopener">
+            <img src="assets/icon-whatsapp.svg" alt="" class="btn-icon-img" />
             Falar pelo WhatsApp
           </a>
           <small class="note">Troque o número do WhatsApp no arquivo index.html antes de publicar.</small>
+        </div>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <small>Endereço</small>
+            <p>Av. Japurá, 1414 Praça 14 de Janeiro Manaus / AM</p>
+          </div>
+          <div class="contact-item">
+            <small>Horários</small>
+            <p>Terça a Sábado Manhã · Tarde · Noite</p>
+          </div>
+          <div class="contact-item">
+            <small>Instagram</small>
+            <p>@arandupsi</p>
+          </div>
         </div>
       </div>
     </section>
@@ -234,11 +300,8 @@
 
   <footer>
     <div class="container footer-wrap">
-      <div>
-        <strong>ARANDU</strong>
-        <span>Clínica de Psicologia</span>
-      </div>
-      <p>© <span id="year"></span> Arandu Clínica de Psicologia. Todos os direitos reservados.</p>
+      <img class="footer-logo" src="assets/logo.svg" alt="Arandu Clínica de Psicologia" />
+      <p>© <span id="year"></span> Arandu Clínica de Psicologia · CRP 20/10762 · Manaus, AM</p>
     </div>
   </footer>
 
