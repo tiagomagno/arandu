@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home">
   <header class="topbar">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio">
@@ -34,7 +34,7 @@
 
   <main>
     <section class="hero" id="inicio">
-      <div class="container">
+      <div class="container hero-copy">
         <span class="eyebrow">CRP 20/10.762 — David Azulay de Azevedo</span>
         <h1 class="hero-title">
           Psicologia
@@ -47,7 +47,10 @@
         </p>
         <div class="hero-actions">
           <a class="btn" href="#contato">Agendar atendimento</a>
-          <a class="btn btn-ghost" href="#servicos">Conhecer atendimentos</a>
+          <a class="btn btn-ghost" href="#servicos">
+            Conhecer atendimentos
+            <svg class="btn-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
     </section>
@@ -68,10 +71,9 @@
 
     <section class="section" id="sobre">
       <div class="container split about-grid">
-        <div class="about-visual" aria-hidden="true">
-          <span class="leaf leaf-1"></span>
-          <span class="leaf leaf-2"></span>
-        </div>
+        <figure class="about-visual">
+          <img src="assets/espacos/sobre.webp" alt="Sala de atendimento da Arandu com parede verde, poltronas em veludo verde e plantas" width="1050" height="1400" loading="lazy" decoding="async" />
+        </figure>
         <div>
           <span class="eyebrow">Sobre a clínica</span>
           <h2 class="about-title">Um espaço de escuta genuína.</h2>
@@ -195,24 +197,28 @@
 
         <div class="spaces-preview">
           <a class="space-card" href="espacos.html#arandu">
+            <img class="space-card-img" src="assets/espacos/arandu.webp" alt="" width="1000" height="1250" loading="lazy" decoding="async" />
             <span class="space-card-label">
               <strong>Sala Arandu</strong>
               <span>Sabedoria</span>
             </span>
           </a>
           <a class="space-card" href="espacos.html#curumim">
+            <img class="space-card-img" src="assets/espacos/curumim.webp" alt="" width="1000" height="1250" loading="lazy" decoding="async" />
             <span class="space-card-label">
               <strong>Espaço Curumim</strong>
               <span>Liberdade</span>
             </span>
           </a>
           <a class="space-card" href="espacos.html#ybyra">
+            <img class="space-card-img" src="assets/espacos/ybyra.webp" alt="" width="1000" height="1250" loading="lazy" decoding="async" />
             <span class="space-card-label">
               <strong>Sala Ybyrá</strong>
               <span>Crescimento</span>
             </span>
           </a>
           <a class="space-card" href="espacos.html#pyta">
+            <img class="space-card-img" src="assets/espacos/pyta.webp" alt="" width="1000" height="1250" loading="lazy" decoding="async" />
             <span class="space-card-label">
               <strong>Sala Pytã</strong>
               <span>Renovação</span>

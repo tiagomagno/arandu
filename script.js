@@ -59,3 +59,11 @@ if (teamModal) {
     if (event.key === 'Escape' && !teamModal.hidden) closeTeamModal();
   });
 }
+
+const topbar = document.querySelector('.topbar');
+
+if (topbar && document.body.classList.contains('home')) {
+  const updateTopbar = () => topbar.classList.toggle('is-scrolled', window.scrollY > 24);
+  updateTopbar();
+  window.addEventListener('scroll', updateTopbar, { passive: true });
+}
