@@ -1,0 +1,10 @@
+﻿
+# arquivamento: nunca enviar segredos/dependencias
+.env
+.env.*
+!.env.example
+!.env*.example
+node_modules/
+.next/
+__pycache__/
+*.tsbuildinfo
